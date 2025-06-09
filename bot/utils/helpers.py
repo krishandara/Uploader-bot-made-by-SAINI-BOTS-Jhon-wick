@@ -292,30 +292,7 @@ async def format_url(url: str, quality: str = "1"):
     elif 'amazonaws.com' in url:
         url =  f"https://master-api-v3.vercel.app/adda-mp4-m3u8?url={url}&quality={raw_text2}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NDU5MDg2MjUuNTgsImRhdGEiOnsiX2lkIjoiNjgwNzM3YjBlNTJiNmE4NWUxODRhNGI0IiwidXNlcm5hbWUiOiI5NzgyNjc3NTIwIiwiZmlyc3ROYW1lIjoiUmFqZXNoIiwibGFzdE5hbWUiOiJSIE1haGFyIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTc0NTMwMzgyNX0.ZywH_ZbbpDeRuFBNqrF_als0sOMwxadKJTWePtCRf9U"
 
-    elif "appx-recordings-mcdn.akamai.net.in/drm/" in url:
-        cmd = f'ffmpeg -i "{url}" -c copy -bsf:a aac_adtstoasc "{name}.mp4"'
-    
-    elif "arvind" in url:
-        cmd = f'ffmpeg -i "{url}" -c copy -bsf:a aac_adtstoasc "{name}.mp4"'
-    
-    elif "https://appx-transcoded-videos.livelearn.in/videos/rozgar-data/" in url:
-        url = url.replace("https://appx-transcoded-videos.livelearn.in/videos/rozgar-data/", "")
-        name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "@").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-        name = f'{str(count).zfill(3)}) {name1[:60]}'
-        cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
 
-    elif "https://appx-transcoded-videos-mcdn.akamai.net.in/videos/boosteracademy-data/" in url:
-        url = url.replace("https://appx-transcoded-videos-mcdn.akamai.net.in/videos/boosteracademy-data/", "")
-        name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "@").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-        name = f'{str(count).zfill(3)}) {name1[:60]}'
-        cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
-    
-    elif "https://appx-transcoded-videos-mcdn.akamai.net.in/videos/bhainskipathshala-data/" in url:
-        url = url.replace("https://appx-transcoded-videos-mcdn.akamai.net.in/videos/bhainskipathshala-data/", "")
-        name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "@").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-        name = f'{str(count).zfill(3)}) {name1[:60]}'
-        cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
-    
     elif '/do' in url:               
         pdf_id = url.split("/")[-1].split(".pdf")[0]
         print(pdf_id)
