@@ -9,20 +9,20 @@
     "repository": "",
     "env": {
       "BOT_TOKEN": {
-        "description": "8084560097:AAEPifeVRNcag0XFm3YxuK_kOOiI7tOwHXk",
-        "value": "8084560097:AAEPifeVRNcag0XFm3YxuK_kOOiI7tOwHXk"
+        "description": "BOT TOKEN",
+        "value": "PASTE YOUR BOT TOKEN"
       },
       "API_ID": {
-        "description": "28094744",
-        "value": "28094744"
+        "description": "API ID",
+        "value": "PASTE YOUR API ID"
       },
       "API_HASH": {
-        "description": "a75af4285edc7747c57bb19147ca0b9b",
-        "value": "a75af4285edc7747c57bb19147ca0b9b"
+        "description": "API HASH",
+        "value": "PASYE YOUR API HASH"
       },
       "OWNER_ID": {
-        "description": "5680454765",
-        "value": "5680454765",
+        "description": "OWNER",
+        "value": "PASTE YOUR ID",
         "required": true
       },
       "DATABASE_NAME": {
@@ -31,13 +31,13 @@
         "required": false
       },
       "DATABASE_URL": {
-        "description": "mongodb+srv://mewadonlinestudy:yYjxKiZGQag8DnWH@cpvod.ywpecvo.mongodb.net/?retryWrites=true&w=majority&appName=cpvod",
+        "description": "DATABASE URL",
         "value": "mongodb+srv://mewadonlinestudy:yYjxKiZGQag8DnWH@cpvod.ywpecvo.mongodb.net/?retryWrites=true&w=majority&appName=cpvodak",
         "required": true
       },
       "LOG_CHANNEL": {
-        "description": "-1002163136973",
-        "value": "-1001529584600"
+        "description": "LOG CHANNEL",
+        "value": "LOG CHANNEL ID"
       }
     },
     "addons": [],
