@@ -26,8 +26,8 @@
         "required": true
       },
       "DATABASE_NAME": {
-        "description": "mewadonlinestudys",
-        "value": "drmbot",
+        "description": "DRM SAINI BOTS",
+        "value": "SAINI DRM UPLOADER BOT",
         "required": false
       },
       "DATABASE_URL": {
