@@ -27,7 +27,7 @@
       },
       "DATABASE_NAME": {
         "description": "DRM SAINI BOTS",
-        "value": "SAINI DRM UPLOADER BOT",
+        "value": "sainiuploaderbotuser",
         "required": false
       },
       "DATABASE_URL": {
