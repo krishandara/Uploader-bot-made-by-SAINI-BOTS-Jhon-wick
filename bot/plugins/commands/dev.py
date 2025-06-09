@@ -10,10 +10,10 @@ async def start(bot: Client, message: Message):
         [
             [
                 types.InlineKeyboardButton(
-                    "Telegram", url="https://t.me/Nikhil_saini_khe"
+                    "🛠️Help", url="https://t.me/saini_contact_bot"
                 ),
                 types.InlineKeyboardButton(
-                    "GitHub", url="https://github.com/nikhilsaini098"
+                    "🛠️Repo", url="https://github.com/nikhilsainiop/Uploader-bot-made-by-SAINI-BOTS-Jhon-wick"
                 ),
             ],
         ]
