@@ -1,0 +1,61 @@
+{
+    "name": "SAINI BOTS",
+    "description": "",
+    "stack": "heroku-22",
+    "keywords": [
+      "telegram"
+    ],
+    "website": "",
+    "repository": "",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "8084560097:AAEPifeVRNcag0XFm3YxuK_kOOiI7tOwHXk",
+        "value": "8084560097:AAEPifeVRNcag0XFm3YxuK_kOOiI7tOwHXk"
+      },
+      "API_ID": {
+        "description": "28094744",
+        "value": "28094744"
+      },
+      "API_HASH": {
+        "description": "a75af4285edc7747c57bb19147ca0b9b",
+        "value": "a75af4285edc7747c57bb19147ca0b9b"
+      },
+      "OWNER_ID": {
+        "description": "5680454765",
+        "value": "5680454765",
+        "required": true
+      },
+      "DATABASE_NAME": {
+        "description": "mewadonlinestudys",
+        "value": "drmbot",
+        "required": false
+      },
+      "DATABASE_URL": {
+        "description": "mongodb+srv://mewadonlinestudy:yYjxKiZGQag8DnWH@cpvod.ywpecvo.mongodb.net/?retryWrites=true&w=majority&appName=cpvod",
+        "value": "mongodb+srv://mewadonlinestudy:yYjxKiZGQag8DnWH@cpvod.ywpecvo.mongodb.net/?retryWrites=true&w=majority&appName=cpvodak",
+        "required": true
+      },
+      "LOG_CHANNEL": {
+        "description": "-1002163136973",
+        "value": "-1001529584600"
+      }
+    },
+    "addons": [],
+    "buildpacks": [
+      {
+        "url": "https://github.com/amivin/aria2-heroku.git"
+      },
+      {
+        "url": "heroku/python"
+      },
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      }
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "standard-2x"
+      }
+    }
+}
