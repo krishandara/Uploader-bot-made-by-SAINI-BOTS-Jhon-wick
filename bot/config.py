@@ -27,7 +27,7 @@ class Config(object):
     WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "False"), False)
     WEBHOOK = True  # Don't change this
     PORT = int(os.environ.get("PORT", 8000))
-    THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "https://envs.sh/GV0.jpg").split()))
+    THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "").split()))
 
     # Constants
     CANCEL_DATA = {}
@@ -38,7 +38,7 @@ class Script(object):
     START_MESSAGE = (
         " {mention}\n\nsᴇɴᴅ ᴀɴʏ ʟɪɴᴋ ᴏʀ ᴛxᴛ ғɪʟᴇ."
     )
-    DEV_MESSAGE = """👋 Hey there, I'm [sᴀɪɴɪ ʙᴏᴛs](https://t.me/saini_contact_bot)) – your go-to Telegram bot developer!
+    DEV_MESSAGE = """👋 Hey there, I'm [ALONE ʙᴏᴛs]() – your go-to Telegram bot developer!
 
 🤖 Love having bots that do the heavy lifting for you? That's my jam! I'm all about crafting super cool and custom Telegram bots that make your life a breeze.
 
@@ -69,7 +69,7 @@ Let's bot up and have some fun! 🤘"""
     NEW_USER_MESSAGE = """#NewUser
 
 🆔 User ID: `{user_id}`
-👤 User: {mention}
+👤 User: {ALONE}
 """
     DOWNLOADING = """📥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ 📥 
     
@@ -89,7 +89,7 @@ Let's bot up and have some fun! 🤘"""
 
 📚 Bᴀᴛᴄʜ Nᴀᴍᴇ : {batch_name}
 
-🌟 Exᴛʀᴀᴄᴛᴇᴅ Bʏ : [𝄟⃝‌sᴀɪɴɪ ʙᴏᴛs𝄟⃝‌](https://t.me/saini_contact_bot)"""
+🌟 Exᴛʀᴀᴄᴛᴇᴅ Bʏ : [𝄟⃝‌ALONE ʙᴏᴛs𝄟⃝‌]()"""
 
 
     CAPTION_CB = """**Set Caption
